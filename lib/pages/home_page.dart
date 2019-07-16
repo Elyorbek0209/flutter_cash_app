@@ -47,7 +47,7 @@ class _HomeState extends State<Home> {
             onPressed: (){
 
 
-              //#4 Here popUp DialogBox Appears
+              //#4 Here popUp DialogBox Appears inside the showDialog
               showDialog(
 
 
@@ -56,28 +56,147 @@ class _HomeState extends State<Home> {
                 builder: (context) => new AlertDialog(
 
 
+                  //#5 Here Title of the popUp Dialog
                   title: new Text("add"),
 
                   content: new Container(
 
 
-                    height: 100.0,
+                    height: 180.0,
 
                     child: new Column(
 
 
                       children: <Widget>[
 
+
+
+                        //------------ADD BUTTON for NEW INCOME -----
+
                         new Row(
 
 
                           children: <Widget>[
 
-                            new Text("Hello")
+
+                            //#6 Here Dollar Icon inside the popUp Dialog
+                            new Padding(
+                              
+                              padding: EdgeInsets.all(4.0),
+                              
+                              child: Icon(Icons.attach_money),
+                            
+                            ),
+
+
+                            //#7 Here 'Income' Icon inside the popUp Dialog
+                            new Padding(
+
+                              padding: EdgeInsets.all(2.0),
+
+                              child: new MaterialButton(
+
+                                onPressed: (){},
+
+                                child: new Text("Income"),
+
+                              ),
+
+                            )
+                            
+
+                          ],
+
+                        ),
+
+                        //------------ADD BUTTON for NEW INCOME  -----
+
+
+
+
+                         //------------Here NEW EXPENCE ADD BUTTON  -----
+
+                        new Row(
+
+
+                          children: <Widget>[
+
+
+                            //#8 Here Dollar Icon inside the popUp Dialog
+                            new Padding(
+                              
+                              padding: EdgeInsets.all(4.0),
+                              
+                              child: Icon(Icons.money_off),
+                            
+                            ),
+
+
+                            //#9 Here 'Income' Icon inside the popUp Dialog
+                            new Padding(
+
+                              padding: EdgeInsets.all(2.0),
+
+                              child: new MaterialButton(
+
+                                onPressed: (){},
+
+                                child: new Text("Expence"),
+
+                              ),
+
+                            )
+                            
+
+                          ],
+
+                        ),
+
+                        //------------NEW EXPENCE ADD BUTTON ENDS-----
+
+
+
+                        //------------NEW CATTEGORY ADD BUTTON  -----
+
+                        new Row(
+
+
+                          children: <Widget>[
+
+
+                            //#10 Here Dollar Icon inside the popUp Dialog
+                            new Padding(
+                              
+                              padding: EdgeInsets.all(4.0),
+                              
+                              child: Icon(Icons.dashboard),
+                            
+                            ),
+
+
+                            //#11 Here 'Income' Icon inside the popUp Dialog
+                            new Padding(
+
+                              padding: EdgeInsets.all(2.0),
+
+                              child: new MaterialButton(
+
+                                onPressed: (){},
+
+                                child: new Text("Category"),
+
+                              ),
+
+                            )
+                            
 
                           ],
 
                         )
+
+                        //------------NEW CATTEGORY ADD BUTTON ENDS-----
+
+
 
                       ],
 
@@ -102,6 +221,56 @@ class _HomeState extends State<Home> {
 
       
 
+      //-------------------BODY PART------------------
+
+
+      body: new Stack(
+
+        children: <Widget>[
+
+          Center(
+
+            child: ListTile(
+
+
+              title: new Icon(
+                
+                Icons.account_balance_wallet,
+              
+                size: 64.0,
+
+                color: Colors.grey,
+              
+              ),
+
+
+              subtitle: Padding(
+
+                padding: const EdgeInsets.only(left: 100.0),
+
+                child: new Text(
+                  
+                  "Waste No Money",
+                
+                  style: TextStyle(fontSize: 16.0),
+                
+                ),
+
+              ),
+
+            ),
+
+          )
+
+        ],
+
+      ),
+
+
+
+
+
+
 
       //---------BOTTOM PART of the APP BEGINS ---------
 
@@ -109,6 +278,7 @@ class _HomeState extends State<Home> {
       bottomNavigationBar:  new Container(
 
         color: Colors.white,
+
 
         child: Row(
 
