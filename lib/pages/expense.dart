@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_cash_app/components.dart/alert.dart';
+import 'package:flutter_cash_app/pages/home_page.dart';
 
 
 
@@ -72,7 +73,39 @@ class _ExpenseState extends State<Expense> {
 
             },
           
+          ),
+
+
+
+
+           //---------Here Below BUTTON FORWARD TO THE HOME PAGE ----------
+
+          new IconButton(
+            
+            icon: Icon(Icons.home),
+            
+            onPressed: (){
+
+
+              //Here we'll move to below given Class's page
+              Navigator.push(
+
+                context,
+
+                new MaterialPageRoute(
+
+                  builder: (context) => new Home(),
+
+                )
+
+              );
+
+            },
+
           )
+
+          //---------------ENDS----------------
+
 
         ],
 

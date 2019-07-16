@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_cash_app/components.dart/alert.dart';
 
+import 'home_page.dart';
+
 
 
 
@@ -77,7 +79,38 @@ class _CategoryState extends State<Category> {
 
             },
           
+          ),
+
+
+
+           //---------Here Below BUTTON FORWARD TO THE HOME PAGE ----------
+
+          new IconButton(
+            
+            icon: Icon(Icons.home),
+            
+            onPressed: (){
+
+
+              //Here we'll move to below given Class's page
+              Navigator.push(
+
+                context,
+
+                new MaterialPageRoute(
+
+                  builder: (context) => new Home(),
+
+                )
+
+              );
+
+            },
+
           )
+
+          //---------------ENDS----------------
+
 
         ],
 

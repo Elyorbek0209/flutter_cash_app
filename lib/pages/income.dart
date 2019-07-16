@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_cash_app/components.dart/alert.dart';
+import 'package:flutter_cash_app/pages/home_page.dart';
 
 
 
@@ -58,7 +59,7 @@ class _IncomeState extends State<Income> {
                   content: new Container(
 
 
-                    height: 120.0,
+                    height: 180.0,
 
                     child: Alert(),
 
@@ -70,7 +71,39 @@ class _IncomeState extends State<Income> {
 
             },
           
+          ),
+
+
+
+
+          //---------Here Below BUTTON FORWARD TO THE HOME PAGE ----------
+
+          new IconButton(
+            
+            icon: Icon(Icons.home),
+            
+            onPressed: (){
+
+
+              //Here we'll move to below given Class's page
+              Navigator.push(
+
+                context,
+
+                new MaterialPageRoute(
+
+                  builder: (context) => new Home(),
+
+                )
+
+              );
+
+            },
+
           )
+
+          //---------------ENDS----------------
+
 
         ],
 
