@@ -2,50 +2,39 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_cash_app/components.dart/alert.dart';
 
+import 'package:flutter_cash_app/pages/home_page.dart';
+
 import 'package:flutter_cash_app/pages/expense.dart';
 
 import 'package:flutter_cash_app/pages/income.dart';
 
-import 'package:flutter_cash_app/pages/category.dart';
 
 
 
-class Home extends StatefulWidget {
-  
+class Income extends StatefulWidget {
+
   @override
-  _HomeState createState() => _HomeState();
+  _IncomeState createState() => _IncomeState();
 
 }
 
 
 
-
-class _HomeState extends State<Home> {
-  
+class _IncomeState extends State<Income> {
 
   @override
   Widget build(BuildContext context) {
 
 
-    //Here we'll Define 'size' Variable below
-
-    final mediaQuerydata = MediaQuery.of(context);
-
-    final objectSize = mediaQuerydata.size.width;
-
-
-
- 
     return Scaffold(
 
-
-      //---------TOP PART of the APP BEGINS ---------
+       //---------TOP PART of the APP BEGINS ---------
 
       appBar: AppBar(
 
 
         //#1 Here title of the App
-        title: new Text("Flutter Cash App"),
+        title: new Text("Category"),
 
         //#2 Here top background color
         backgroundColor: Color(0xFFF47D15),
@@ -92,56 +81,6 @@ class _HomeState extends State<Home> {
 
             },
           
-          )
-
-        ],
-
-      ),
-
-      //---------ENDS TOP PART of the APP ---------
-
-
-      
-
-      //-------------------BODY PART------------------
-
-
-      body: new Stack(
-
-        children: <Widget>[
-
-          Center(
-
-            child: ListTile(
-
-
-              title: new Icon(
-                
-                Icons.account_balance_wallet,
-              
-                size: 64.0,
-
-                color: Colors.grey,
-              
-              ),
-
-
-              subtitle: new Padding(
-
-                padding: EdgeInsets.only(left: objectSize / 3.5 ),
-
-                child: new Text(
-                  
-                  "Waste No Money",
-                
-                  style: TextStyle(fontSize: 16.0),
-                
-                ),
-
-              ),
-
-            ),
-
           )
 
         ],
@@ -228,13 +167,16 @@ class _HomeState extends State<Home> {
         ),
 
       ),
+
+
+
+
+
       
-
-       //---------ENDS BOTTOM PART of the APP ---------
-
     );
   }
 }
+
 
 
 
