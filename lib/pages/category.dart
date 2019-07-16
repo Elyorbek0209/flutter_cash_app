@@ -2,25 +2,21 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_cash_app/components.dart/alert.dart';
 
-import 'package:flutter_cash_app/pages/home_page.dart';
-
-import 'package:flutter_cash_app/pages/expense.dart';
-
-import 'package:flutter_cash_app/pages/income.dart';
 
 
 
 
-class Income extends StatefulWidget {
+
+class Category extends StatefulWidget {
 
   @override
-  _IncomeState createState() => _IncomeState();
+  _CategoryState createState() => _CategoryState();
 
 }
 
 
 
-class _IncomeState extends State<Income> {
+class _CategoryState extends State<Category> {
 
   @override
   Widget build(BuildContext context) {

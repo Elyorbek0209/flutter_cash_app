@@ -2,11 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_cash_app/components.dart/alert.dart';
 
-import 'package:flutter_cash_app/pages/home_page.dart';
-
-import 'package:flutter_cash_app/pages/income.dart';
-
-import 'package:flutter_cash_app/pages/category.dart';
 
 
 

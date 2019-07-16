@@ -1,5 +1,12 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter_cash_app/pages/income.dart';
+
+import 'package:flutter_cash_app/pages/expense.dart';
+
+import 'package:flutter_cash_app/pages/category.dart';
+
+
 
 class Alert extends StatelessWidget {
 
@@ -40,7 +47,22 @@ class Alert extends StatelessWidget {
 
                 child: new MaterialButton(
 
-                  onPressed: (){},
+                  onPressed: (){
+
+                    //Here we'll move to below given Class's page
+                    Navigator.push(
+
+                      context,
+
+                      new MaterialPageRoute(
+
+                        builder: (context) => new Income(),
+
+                      )
+
+                    );
+
+                  },
 
                   child: new Text("Income"),
 
@@ -83,9 +105,25 @@ class Alert extends StatelessWidget {
 
                 child: new MaterialButton(
 
-                  onPressed: (){},
+                  onPressed: (){
 
-                  child: new Text("Expence"),
+                    //Here we'll move to below given Class's page
+                    Navigator.push(
+
+                      context,
+
+                      new MaterialPageRoute(
+
+                        builder: (context) => new Expense(),
+
+                      )
+
+                    );
+
+
+                  },
+
+                  child: new Text("Expense"),
 
                 ),
 
@@ -125,7 +163,23 @@ class Alert extends StatelessWidget {
 
                 child: new MaterialButton(
 
-                  onPressed: (){},
+                  onPressed: (){
+
+                    //Here we'll move to below given Class's page
+                    Navigator.push(
+
+                      context,
+
+                      new MaterialPageRoute(
+
+                        builder: (context) => new Category(),
+
+                      )
+
+                  );
+
+
+                  },
 
                   child: new Text("Category"),
 
